@@ -31,7 +31,6 @@ __global__ void tma_swizzle(__grid_constant__ const CUtensorMap src_map,
 
     // Cast to a "shared pointer" so that it works with
     // cp_async_bulk_tensor_2d_global_to_shared.
-    uint32_t smem_addr = __cvta_generic_to_shared(smem_buffer);
 
     /* TODO: your launch code here... */
 }
